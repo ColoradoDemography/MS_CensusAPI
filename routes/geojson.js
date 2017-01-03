@@ -393,7 +393,7 @@ var schema = req.query.schema ||  function(){
   var port='5433';
   //if(db==='acs1014'){port='5433';} All databases now use 5433
   
-  conString = "postgres://codemog:demography@gis.dola.colorado.gov:" + port + "/" + db;
+  conString = "postgres://codemog:demography@104.197.26.248:" + port + "/" + db;
   
   //carto or tiger or nhgis
 var geo=""; //for now, geo will be set as a default
