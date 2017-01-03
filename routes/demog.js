@@ -391,7 +391,7 @@ var schema = req.query.schema ||  function(){
   return '';  //no valid database - will deal with later 
 }();
   
-  conString = "postgres://codemog:demography@gis.dola.colorado.gov:5433/" + db;
+  //conString = "postgres://codemog:demography@gis.dola.colorado.gov:5433/" + db;
   var geo = req.query.geo || "undefined"; 
   var series = req.query.series || "undefined";
   var type = req.query.type || "undefined";  
@@ -821,8 +821,8 @@ return;
     function sendtodatabase(sqlstring) {
       
        console.log(sqlstring);
-        var client = new pg.Client(conString);
-      console.log("a:", conString);
+        var client = new pg.Client(conString + db);
+      console.log("a:", conString + db);
 
         client.connect(function(err) {
 
@@ -874,8 +874,8 @@ return;
      function sendinternal(sqlstring, branch) {
 
        console.log(sqlstring);
-        var client = new pg.Client(conString);
-      console.log("b:", conString);
+        var client = new pg.Client(conString + db);
+      console.log("b:", conString + db);
        
         client.connect(function(err) {
 
