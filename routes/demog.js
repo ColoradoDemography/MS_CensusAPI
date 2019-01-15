@@ -452,7 +452,7 @@ if(db==='acs0610' || db==='acs0711' || db==='acs0812' || db==='acs0913' || db===
 }
     
   //validate database selected
-    if(db!=='c1980' && db!=='c1990' && db!=='c2000' && db!=='c2010' && db!=='acs0610' && db!=='acs0711' && db!=='acs0812' && db!=='acs0913' && db!=='acs1014' && db!=='acs1115' && db!=='acs1216'){
+    if(db!=='c1980' && db!=='c1990' && db!=='c2000' && db!=='c2010' && db!=='acs0610' && db!=='acs0711' && db!=='acs0812' && db!=='acs0913' && db!=='acs1014' && db!=='acs1115' && db!=='acs1216' && db!=='acs1317'){
       errorarray.push('Your database choice `' + db + '` is not valid.');
       db="";
       return 'error'; //goto a;
