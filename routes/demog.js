@@ -383,7 +383,7 @@ function array_unshift(array) {
     
  //potential single select
 var type = req.query.type || 'json';
-var db = req.query.db || 'acs1317';
+var db = req.query.db || 'acs1418';
 //set default for schema if it is missing
 var schema = req.query.schema ||  function(){
   if(db==='acs1418' || db==='acs1317' || db==='acs1216' || db==='acs1115' || db==='acs1014' || db==='acs0913' || db==='acs0812' || db==='acs0711' || db==='acs0610' || db==='c2010'){return 'data';}
