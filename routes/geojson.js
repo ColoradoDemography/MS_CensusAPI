@@ -398,6 +398,7 @@ var schema = req.query.schema ||  function(){
   //carto or tiger or nhgis
 var geo=""; //for now, geo will be set as a default
 
+  if(db==='acs1418'){geo='carto';}
   if(db==='acs1317'){geo='carto';}
   if(db==='acs1216'){geo='carto';}
   if(db==='acs1115'){geo='carto';}
