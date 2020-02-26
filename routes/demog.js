@@ -395,8 +395,8 @@ var schema = req.query.schema ||  function(){
   var geo = req.query.geo || "undefined"; 
   var series = req.query.series || "undefined";
   var type = req.query.type || "undefined";  
-  //by default limits to 1000 search results.  override by setting limit= in GET string
-  var limit = parseInt(req.query.limit,10) || 1000;  
+  //by default limits to 5000 search results.  override by setting limit= in GET string
+  var limit = parseInt(req.query.limit,10) || 5000;  
 
 //if database is acs, check to see if moe option is flagged
 var moe='no';
