@@ -25,15 +25,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-csv": "^0.6.0",
-    "pg": {
-      "version": "7.1.2",
-      "from": "pg@7.1.2",
-        "dependencies": {
-          "pgpass":{
-            "version": "1.0.2",
-            "from": "pgpass@1.0.2"
-          }
-        }  
-    }
-  }
+    "pg": "7.1.2"
+   }
 }
