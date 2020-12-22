@@ -11,7 +11,7 @@ module.exports = function(app, pg, conString){
 app.get('/meta', function(req, res) {
 
   //potential multi select (comma delimited list)
-  var db = req.query.db || "acs1317";
+  var db = req.query.db || "acs1519";
   var schema = req.query.schema || "data";  
 
   //Query metadata
