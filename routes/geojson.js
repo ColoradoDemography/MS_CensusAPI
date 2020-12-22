@@ -385,7 +385,7 @@ function array_unshift(array) {
 var db = req.query.db || 'acs1519';
 //set default for schema if it is missing
 var schema = req.query.schema ||  function(){
-  if(db==='acs1519' || db==='acs1418' || db==='acs1317' || db==='acs1216' || db==='acs1115' || db==='acs1014' || db==='acs0913' || db==='acs0812' || db==='acs0711' || db==='acs0610' || db==='c2010'){return 'data';}
+  if(db==='acs1418' || db==='acs1317' || db==='acs1216' || db==='acs1115' || db==='acs1014' || db==='acs0913' || db==='acs0812' || db==='acs0711' || db==='acs0610' || db==='c2010'){return 'data';}
   if(db==='c2000' || db==='c1990' || db==='c1980'){return 'sf1';}  
   return '';  //no valid database - will deal with later 
 }();
@@ -398,7 +398,6 @@ var schema = req.query.schema ||  function(){
   //carto or tiger or nhgis
 var geo=""; //for now, geo will be set as a default
 
-  if(db==='acs1519'){geo='carto';}
   if(db==='acs1418'){geo='carto';}
   if(db==='acs1317'){geo='carto';}
   if(db==='acs1216'){geo='carto';}
@@ -427,7 +426,7 @@ var geodesc=""; //for now, geodesc will be set based upon sumlev
   
 //if database is acs, check to see if moe option is flagged
 var moe='no';
-if(db=='acs0610' || db=='acs0711' || db=='acs0812' || db=='acs0913' || db=='acs1014' || db=='acs1115' || db=='acs1216' || db=='acs1317' || db=='acs1418' || db=='acs1519'){
+if(db=='acs0610' || db=='acs0711' || db=='acs0812' || db=='acs0913' || db=='acs1014' || db=='acs1115' || db=='acs1216' || db=='acs1317' || db=='acs1418'){
   if (req.query.moe){
     moe=req.query.moe;
   }
