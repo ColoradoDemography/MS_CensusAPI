@@ -25,7 +25,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-csv": "^0.6.0",
-    "pg": "7.12.1",
-    "pgpass": "1.0.2"
+    "pg": "6.4.2"
   }
 }
