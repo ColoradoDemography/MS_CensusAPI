@@ -25,4 +25,3 @@ jobs:
       
     - name: Docker Push
       run: docker push codemog/ms_censusapi
-© 2021 GitHub, Inc.
