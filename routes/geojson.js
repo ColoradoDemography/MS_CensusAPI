@@ -408,7 +408,7 @@ var geo=""; //for now, geo will be set as a default
   if(db==='acs0812'){geo='carto';}
   if(db==='acs0711'){geo='carto';}
   if(db==='acs0610'){geo='carto';}
-  if(db==='c2020'){geo='carto';}
+  //if(db==='c2020'){geo='carto';}
   if(db==='c2010'){geo='carto';}
   if(db==='c2000'){geo='carto';}
   if(db==='c1990'){geo='nhgis';}
