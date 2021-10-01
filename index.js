@@ -7,21 +7,14 @@ var csv = require('express-csv');
 
 var conString = "postgres://codemog:demography@gis.dola.colorado.gov:5433/";
 
-app.get(function(req, res, next) {
+var allowCrossDomain = function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'GET');
 
     next();
-});
+}
 
-//var allowCrossDomain = function(req, res, next) {
-//    res.header('Access-Control-Allow-Origin', '*');
-//    res.header('Access-Control-Allow-Methods', 'GET');
-
-//    next();
-//}
-
-//app.use(allowCrossDomain);
+app.use(allowCrossDomain);
 
 require('./routes/meta.js')(app, pg, conString);
 require('./routes/demog.js')(app, pg, csv, conString);
