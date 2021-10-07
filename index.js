@@ -3,7 +3,7 @@
 var express = require('express');
 var app = express();
 var pg = require('pg');
-var csv = require('express-csv');
+var csv = require('csv-express');
 
 var conString = "postgres://codemog:demography@gis.dola.colorado.gov:5433/";
 
