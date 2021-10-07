@@ -496,7 +496,7 @@ if (field==="undefined"){
   
     function check() {
         if (field === undefined || field ==="undefined") {
-          setTimeout(check, 50); 
+          setTimeout(check, 1000); 
           //console.log('waiting...');
         }else{
           //console.log('field: '+field);
@@ -728,7 +728,7 @@ function formatandsend(){
       function check2() {
         if (lastbranchdone === 0) {
           //console.log('waiting tablemeta...');
-          setTimeout(check2, 50); 
+          setTimeout(check2, 1000); 
         }else{
           createlast();
         }
