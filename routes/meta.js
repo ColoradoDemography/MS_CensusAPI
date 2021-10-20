@@ -15,7 +15,7 @@ app.get('/meta', function(req, res) {
   var schema = req.query.schema || "data";  
 
   //Query metadata
-  var tblsql="SELECT table_id, table_title, universe from " + schema + ".census_table_metadata;";
+  var tblsql="SELECT table_id, table_title, universe from " + schema + ".census_table_metadata ORDER BY table_id;";
 
 
     sendtodatabase(tblsql);
