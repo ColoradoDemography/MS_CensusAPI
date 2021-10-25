@@ -385,7 +385,7 @@ function array_unshift(array) {
 var db = req.query.db || 'acs1519';
 //set default for schema if it is missing
 var schema = req.query.schema ||  function(){
-  if(db==='acs1519' || db==='acs1418' || db==='acs1317' || db==='acs1216' || db==='acs1115' || db==='acs1014' || db==='acs0913' || db==='acs0812' || db==='acs0711' || db==='acs0610' || db==='c2010'){return 'data';}
+  if(db==='acs1519' || db==='acs1418' || db==='acs1317' || db==='acs1216' || db==='acs1115' || db==='acs1014' || db==='acs0913' || db==='acs0812' || db==='acs0711' || db==='acs0610' || db==='c2010' || db==='c2020'){return 'data';}
   if(db==='c2000' || db==='c1990' || db==='c1980'){return 'sf1';}  
   return '';  //no valid database - will deal with later 
 }();
@@ -408,6 +408,7 @@ var geo=""; //for now, geo will be set as a default
   if(db==='acs0812'){geo='carto';}
   if(db==='acs0711'){geo='carto';}
   if(db==='acs0610'){geo='carto';}
+  if(db==='c2020'){geo='carto';}
   if(db==='c2010'){geo='carto';}
   if(db==='c2000'){geo='carto';}
   if(db==='c1990'){geo='nhgis';}
