@@ -390,7 +390,7 @@ var schema = req.query.schema ||  function(){
   return '';  //no valid database - will deal with later 
 }();
   
-  var port='5433';
+  var port='5432';
   //if(db==='acs1014'){port='5433';} All databases now use 5433
   
   conString = "postgres://codemog:demography@gis.dola.colorado.gov:" + port + "/" + db;
