@@ -715,7 +715,7 @@ if (sumlev!=="undefined"){errorarray.push('You specified SUMLEV.  This parameter
   
   //CONSTRUCT MAIN SQL STATEMENT
 // execute query
-var sql = "SELECT geoname, state, county, place, tract, bg, geonum, " + field + " from search." + schema + jointablelist + " where" + joinlist + " limit " + limit + ";";  
+var sql = "SELECT geoname, state, county, place, tract, bg, geonum, " + field + " from search." + schema + jointablelist + " where" + joinlist + " limit " + limit + " ORDER BY geonum ASC;";  
   
     //console.log(sql);
   
