@@ -18,7 +18,7 @@ Here is an inventory of the files in this repo:
 
 <h3>Parameters</h3>
 
-<b>db</b>: currently valid are acs1014, acs0913, acs0812, c2010, c2000, c1990, c1980.  Default is acs0913
+<b>db</b>: currently valid are acs1014, acs1115, acs1216, acs1317, acs1418, acs1519, acs1620, acs1721, acs1822, acs1923, acs2024, c2020, c2010, c2000, c1990, c1980.  Default is acs2024
 
 <b>type</b>: json or csv   (default is json)
 
