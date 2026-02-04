@@ -627,6 +627,7 @@ if (sumlev!=="undefined"){errorarray.push('You specified SUMLEV.  This parameter
   
       //break the comma delimited records from geonum into an array  
   var geoidarray=explode(",", geoid);
+  geoidarray.sort();
   
 //iterate through all geoids, simply put a '1' in front and treat them like geonums
   for(var y=0;y<geoidarray.length;y++){
@@ -652,6 +653,7 @@ if (sumlev!=="undefined"){errorarray.push('You specified SUMLEV.  This parameter
   
     //break the comma delimited records from county into an array  
   var countyarray=explode(",", county);
+    countyarray.sort();
   
 //iterate through all counties
   for(var x=0;x<countyarray.length;x++){
@@ -669,6 +671,7 @@ if (sumlev!=="undefined"){errorarray.push('You specified SUMLEV.  This parameter
   
     //break the comma delimited records from county into an array  
   var statearray=explode(",", state);
+     statearray.sort();
   
 //iterate through all states
      for(var u=0;u<statearray.length;u++){
