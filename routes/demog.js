@@ -605,6 +605,7 @@ if (geoid!=="undefined"){errorarray.push('You specified GEOID.  This parameter i
   
     //break the comma delimited records from geonum into an array  
   var geonumarray=explode(",", geonum);
+  geonumarray.sort();
   
 //iterate through all geonum's
   for(var z=0;z<geonumarray.length;z++){
